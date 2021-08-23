@@ -113,4 +113,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-Pytorch-practice/cifar10/*
+*/cifar10/*
