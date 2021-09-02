@@ -109,7 +109,7 @@ class DecoderV3(keras.Model):
         self.bn1 = layers.BatchNormalization()
         self.bn2 = layers.BatchNormalization()
         self.bn3 = layers.BatchNormalization()
-        self.upsample = layers.Conv2DTranspose(channels, 2, strides=2, use_bias=False)
+        self.upsample = layers.Conv2DTranspose(channels, 3, strides=2, padding='same', use_bias=False)
         self.conv3x3 = layers.Conv2D(channels, 3, strides=1, padding='same', use_bias=False)
         self.conv1x1 = layers.Conv2D(channels, 1, use_bias=False)
 
